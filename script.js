@@ -37,5 +37,23 @@ function changeColor(){
 }
 
 function clicks(){
-  console.log('I work');
+  const button = document.getElementById("buttonChanger");
+  const text = document.getElementById("reward");
+  button.innerText = "Nice!!";
+  text.innerHTML = "Now that you learned how to change the colors, choose the color you want"
+  setTimeout(reward, 4000);
+}
+
+function reward(){
+  const text = document.getElementById("reward");
+  text.innerHTML = "<input id = 'colorInput' placeholder = 'Choose your color' >";
+
+  const colorInput = document.getElementById('colorInput');
+
+  colorInput.addEventListener('keydown', function(event){
+    if(event.key === 'Enter'){
+      const button = document.getElementById("buttonChanger");
+      button.style.backgroundColor = colorInput.value;
+    }
+  })
 }

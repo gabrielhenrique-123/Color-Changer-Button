@@ -6,7 +6,6 @@ p{
   display: flex;
   justify-content: center;
   font-weight: bold;
-  font-size: 35px;
 }
 
 .div-button{
@@ -20,6 +19,21 @@ button{
   border-color: black;
   width: 200px;
   height: 40px;
-  background-color:orangered
 }
 
+.title{
+  font-size: 35px;
+}
+
+.reward-text{
+  margin-top: 60px;
+  font-size: 20px;
+}
+
+input{
+  margin-top: 30px;
+  width: 300px;
+  height: 30px;
+  text-align: center;
+  font-size: 15px;
+}
